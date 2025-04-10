@@ -65,16 +65,16 @@ class ColorUtils {
 /// and retrieve the complete color value as a 32-bit integer.
 extension IntColorComponents on Color {
   /// Alpha component as an 8-bit integer (0-255)
-  int get intAlpha => _floatToInt8(a);
+  int get intAlpha => alpha;
 
   /// Red component as an 8-bit integer (0-255)
-  int get intRed => _floatToInt8(r);
+  int get intRed => red;
 
   /// Green component as an 8-bit integer (0-255)
-  int get intGreen => _floatToInt8(g);
+  int get intGreen => green;
 
   /// Blue component as an 8-bit integer (0-255)
-  int get intBlue => _floatToInt8(b);
+  int get intBlue => blue;
 
   /// Complete color value as a 32-bit integer in ARGB format
   int get intValue => intAlpha << 24 | intRed << 16 | intGreen << 8 | intBlue;
